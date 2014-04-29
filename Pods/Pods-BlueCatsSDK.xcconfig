@@ -1,0 +1,2 @@
+PODS_BLUECATSSDK_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/BlueCatsSDK/"
+PODS_BLUECATSSDK_OTHER_LDFLAGS = -lBlueCatsSDK -framework AdSupport -framework CoreBluetooth -framework CoreGraphics -framework CoreLocation -framework MobileCoreServices -framework SystemConfiguration
