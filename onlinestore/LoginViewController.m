@@ -13,6 +13,12 @@
 
 #import "ASIFormDataRequest.h"
 #import "MBProgressHUD.h"
+#import "SignUpViewController.h"
+
+
+#import "SideMenuViewController.h"
+#import "IIViewDeckController.h"
+
 
 
 
@@ -68,6 +74,37 @@ GPPSignIn *signIn;
     hud.labelText = @"Authenticating..Please wait...";
 
 }
+
+- (IBAction)signUpTap:(id)sender {
+    
+    SignUpViewController *signUpViewController=[[SignUpViewController alloc]initWithNibName:@"SignUpViewController" bundle:nil];
+    [self.navigationController pushViewController:signUpViewController animated:YES];
+}
+
+
+
+
+- (IBAction)guestButtonTap:(id)sender {
+    
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    HomeViewController1 *homeViewController = [sb instantiateViewControllerWithIdentifier:@"HomeViewController1"];
+    
+    
+    
+    SideMenuViewController *sideMenuViewController=[[SideMenuViewController alloc] initWithNibName:@"SideMenuViewController" bundle:nil];
+    
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:homeViewController
+                                                                                    leftViewController:sideMenuViewController];
+    deckController.leftSize = 170;
+    //deckController.leftSize=1024-275;
+    [self.navigationController pushViewController:deckController animated:YES];
+    
+    
+    
+    
+}
+
 
 
 #pragma mark -

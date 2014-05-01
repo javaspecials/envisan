@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
 - (IBAction)loginButtonTap:(id)sender;
+- (IBAction)signUpTap:(id)sender;
+- (IBAction)guestButtonTap:(id)sender;
 
 
 @end

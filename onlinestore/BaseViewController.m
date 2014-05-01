@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "DataHandler.h"
 #import "CartViewController.h"
+#import "IIViewDeckController.h"
 
 @interface BaseViewController ()
 
@@ -61,6 +62,12 @@
     _cartCountLabel.text=[NSString stringWithFormat:@"%i",[[[DataHandler defaultHandler] cartItems] count]];
 }
 
+-(IBAction)sideMenuTap:(id)sender{
+ 
+    [self.viewDeckController openLeftViewAnimated:YES];
+
+
+}
 
 -(IBAction)cartButtonTap:(id)sender{
 

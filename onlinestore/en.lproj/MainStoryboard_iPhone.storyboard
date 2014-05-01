@@ -97,7 +97,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="imO-a8-ToU" kind="push" id="qeo-DW-VvJ"/>
+                                    <action selector="signUpTap:" destination="iMP-7u-V9h" eventType="touchUpInside" id="0ij-fa-BvX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lld-6r-fqo">
@@ -107,7 +107,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hwp-ZE-Bu5" kind="push" id="gq5-hd-vG5"/>
+                                    <action selector="guestButtonTap:" destination="iMP-7u-V9h" eventType="touchUpInside" id="jsI-2r-lzM"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="zpW-5o-GIj">
@@ -1893,7 +1893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Odw-W3-K4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="-270"/>
+            <point key="canvasLocation" x="636" y="-276"/>
         </scene>
         <!--Usere Pro Display View Controller-->
         <scene sceneID="Jbk-h9-2rv">
@@ -2135,7 +2135,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tA9-8S-qcd">
                                         <rect key="frame" x="20" y="33" width="281" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="11C852F7-DF79-4F21-96D0-9A3986565552">
+                                        <state key="normal" image="0F195578-D567-4753-A211-49EF8402368B">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -3085,7 +3085,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="11C852F7-DF79-4F21-96D0-9A3986565552" width="281" height="180">
+        <image name="0F195578-D567-4753-A211-49EF8402368B" width="281" height="180">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

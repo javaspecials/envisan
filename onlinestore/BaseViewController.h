@@ -16,7 +16,7 @@
 -(void)setHeaderView:(BOOL)flag;
 -(IBAction)homeClick:(id)sender;
 -(IBAction)cartButtonTap:(id)sender;
-
+-(IBAction)sideMenuTap:(id)sender;
 
 -(void)updateCartItems;
 //-(void)popupClosed;

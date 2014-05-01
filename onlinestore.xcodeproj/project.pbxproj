@@ -38,6 +38,19 @@
 		2F4528E818F6735500BB26B7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4528E418F6735500BB26B7 /* icon.png */; };
 		2F4528EA18F684C300BB26B7 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4528E918F684C300BB26B7 /* unchecked.png */; };
 		2F4528EC18F684CE00BB26B7 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4528EB18F684CE00BB26B7 /* checked.png */; };
+		2F4C5460191296A7008DDC2A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C545E191296A7008DDC2A /* SignUpViewController.m */; };
+		2F4C5461191296A7008DDC2A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C545F191296A7008DDC2A /* SignUpViewController.xib */; };
+		2F4C546D191296EA008DDC2A /* close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C5463191296E9008DDC2A /* close-button.png */; };
+		2F4C546E191296EA008DDC2A /* mappin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C5464191296EA008DDC2A /* mappin.png */; };
+		2F4C546F191296EA008DDC2A /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C5466191296EA008DDC2A /* MapPoint.m */; };
+		2F4C5470191296EA008DDC2A /* PDLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C5468191296EA008DDC2A /* PDLocation.m */; };
+		2F4C5471191296EA008DDC2A /* PDLocationsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C546B191296EA008DDC2A /* PDLocationsMapViewController.m */; };
+		2F4C5472191296EA008DDC2A /* PDLocationsMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C546C191296EA008DDC2A /* PDLocationsMapViewController.xib */; };
+		2F4C547719129721008DDC2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4C547619129721008DDC2A /* MapKit.framework */; };
+		2F4C547D1912A7FA008DDC2A /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C547A1912A7FA008DDC2A /* IIViewDeckController.m */; };
+		2F4C547E1912A7FA008DDC2A /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C547C1912A7FA008DDC2A /* IIWrapController.m */; };
+		2F4C54821912A899008DDC2A /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C54801912A899008DDC2A /* SideMenuViewController.m */; };
+		2F4C54831912A899008DDC2A /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C54811912A899008DDC2A /* SideMenuViewController.xib */; };
 		2F79568518F5AC0F00B380D7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F79568318F5AC0F00B380D7 /* BaseViewController.m */; };
 		2F79568618F5AC0F00B380D7 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79568418F5AC0F00B380D7 /* BaseViewController.xib */; };
 		2F79568A18F5AC4800B380D7 /* CartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F79568818F5AC4800B380D7 /* CartTableViewCell.m */; };
@@ -270,6 +283,27 @@
 		2F4528E418F6735500BB26B7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2F4528E918F684C300BB26B7 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
 		2F4528EB18F684CE00BB26B7 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		2F4C545D191296A7008DDC2A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		2F4C545E191296A7008DDC2A /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		2F4C545F191296A7008DDC2A /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		2F4C5463191296E9008DDC2A /* close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button.png"; sourceTree = "<group>"; };
+		2F4C5464191296EA008DDC2A /* mappin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappin.png; sourceTree = "<group>"; };
+		2F4C5465191296EA008DDC2A /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		2F4C5466191296EA008DDC2A /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		2F4C5467191296EA008DDC2A /* PDLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDLocation.h; sourceTree = "<group>"; };
+		2F4C5468191296EA008DDC2A /* PDLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDLocation.m; sourceTree = "<group>"; };
+		2F4C5469191296EA008DDC2A /* PDLocationsMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDLocationsMap.h; sourceTree = "<group>"; };
+		2F4C546A191296EA008DDC2A /* PDLocationsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDLocationsMapViewController.h; sourceTree = "<group>"; };
+		2F4C546B191296EA008DDC2A /* PDLocationsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDLocationsMapViewController.m; sourceTree = "<group>"; };
+		2F4C546C191296EA008DDC2A /* PDLocationsMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDLocationsMapViewController.xib; sourceTree = "<group>"; };
+		2F4C547619129721008DDC2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2F4C54791912A7FA008DDC2A /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		2F4C547A1912A7FA008DDC2A /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		2F4C547B1912A7FA008DDC2A /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		2F4C547C1912A7FA008DDC2A /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		2F4C547F1912A899008DDC2A /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		2F4C54801912A899008DDC2A /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		2F4C54811912A899008DDC2A /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		2F79568218F5AC0F00B380D7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2F79568318F5AC0F00B380D7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		2F79568418F5AC0F00B380D7 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
@@ -552,6 +586,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4C547719129721008DDC2A /* MapKit.framework in Frameworks */,
 				2F15C28B18FE4D54007CD543 /* QuartzCore.framework in Frameworks */,
 				2FA14EFC18E1C4A100B77CF6 /* Social.framework in Frameworks */,
 				2FA14EFA18E1C47000B77CF6 /* Twitter.framework in Frameworks */,
@@ -616,6 +651,34 @@
 				2F2CF21018F1711100AEA06A /* bannerSuccess@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		2F4C5462191296C8008DDC2A /* PDLocationMap */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C5463191296E9008DDC2A /* close-button.png */,
+				2F4C5464191296EA008DDC2A /* mappin.png */,
+				2F4C5465191296EA008DDC2A /* MapPoint.h */,
+				2F4C5466191296EA008DDC2A /* MapPoint.m */,
+				2F4C5467191296EA008DDC2A /* PDLocation.h */,
+				2F4C5468191296EA008DDC2A /* PDLocation.m */,
+				2F4C5469191296EA008DDC2A /* PDLocationsMap.h */,
+				2F4C546A191296EA008DDC2A /* PDLocationsMapViewController.h */,
+				2F4C546B191296EA008DDC2A /* PDLocationsMapViewController.m */,
+				2F4C546C191296EA008DDC2A /* PDLocationsMapViewController.xib */,
+			);
+			name = PDLocationMap;
+			sourceTree = "<group>";
+		};
+		2F4C54781912A7E5008DDC2A /* Swipemenu */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C54791912A7FA008DDC2A /* IIViewDeckController.h */,
+				2F4C547A1912A7FA008DDC2A /* IIViewDeckController.m */,
+				2F4C547B1912A7FA008DDC2A /* IIWrapController.h */,
+				2F4C547C1912A7FA008DDC2A /* IIWrapController.m */,
+			);
+			name = Swipemenu;
 			sourceTree = "<group>";
 		};
 		2F79568C18F5AC5600B380D7 /* CustomCells */ = {
@@ -856,6 +919,8 @@
 		3CC3808D18BB67AB007BAD44 /* External Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F4C54781912A7E5008DDC2A /* Swipemenu */,
+				2F4C5462191296C8008DDC2A /* PDLocationMap */,
 				2F80312F19001153002D7C0E /* DYRateView */,
 				2F2CF20218F1711100AEA06A /* ALAlertBanner */,
 				2FAFAB3A18EDA00F00598559 /* FHSTwitterEngine */,
@@ -992,6 +1057,9 @@
 				2FBC444D1907979800B1A6AC /* GroceriesViewController.m */,
 				2FBC4446190793A000B1A6AC /* WishDisplayViewController.h */,
 				2FBC4447190793A000B1A6AC /* WishDisplayViewController.m */,
+				2F4C545D191296A7008DDC2A /* SignUpViewController.h */,
+				2F4C545E191296A7008DDC2A /* SignUpViewController.m */,
+				2F4C545F191296A7008DDC2A /* SignUpViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1006,6 +1074,9 @@
 				2F79568218F5AC0F00B380D7 /* BaseViewController.h */,
 				2F79568318F5AC0F00B380D7 /* BaseViewController.m */,
 				2F79568418F5AC0F00B380D7 /* BaseViewController.xib */,
+				2F4C547F1912A899008DDC2A /* SideMenuViewController.h */,
+				2F4C54801912A899008DDC2A /* SideMenuViewController.m */,
+				2F4C54811912A899008DDC2A /* SideMenuViewController.xib */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -1066,6 +1137,7 @@
 		84D49E7D18B2E2DE008878E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F4C547619129721008DDC2A /* MapKit.framework */,
 				2F15C28A18FE4D54007CD543 /* QuartzCore.framework */,
 				2FA14EFB18E1C4A100B77CF6 /* Social.framework */,
 				2FA14EF918E1C47000B77CF6 /* Twitter.framework */,
@@ -1199,6 +1271,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
 						};
 					};
 				};
@@ -1231,8 +1306,10 @@
 				2F0C1E6D18ED404B00975399 /* camera.png in Resources */,
 				84D49E8918B2E2DE008878E1 /* InfoPlist.strings in Resources */,
 				2F80314119001174002D7C0E /* StarFullLarge.png in Resources */,
+				2F4C546D191296EA008DDC2A /* close-button.png in Resources */,
 				2F4528E818F6735500BB26B7 /* icon.png in Resources */,
 				3C1C1B2D18B39F1200CB07A7 /* building.png in Resources */,
+				2F4C5461191296A7008DDC2A /* SignUpViewController.xib in Resources */,
 				2F0C1E6C18ED404B00975399 /* bike.png in Resources */,
 				2FA2087D18EFEBBE00719F4F /* ShopAssitant.png in Resources */,
 				84D49E9118B2E2DE008878E1 /* Default.png in Resources */,
@@ -1258,6 +1335,7 @@
 				2F2CF21818F1711100AEA06A /* bannerNotify@2x.png in Resources */,
 				2FFE430418FD940500D88F76 /* ratingDemo.png in Resources */,
 				2FA2086B18EFE73700719F4F /* Compare Price.png in Resources */,
+				2F4C546E191296EA008DDC2A /* mappin.png in Resources */,
 				2FC4528E18F85B1C00E9FE33 /* h.png in Resources */,
 				2FA2087518EFEAC800719F4F /* Loyalty Program.png in Resources */,
 				2F0C1E7318ED678100975399 /* intro6.png in Resources */,
@@ -1302,6 +1380,7 @@
 				2F80313F19001174002D7C0E /* StarFull.png in Resources */,
 				2FA133A418F51394006A546B /* Save.png in Resources */,
 				2FFAC5B118FEED1200E43A68 /* fb.png in Resources */,
+				2F4C5472191296EA008DDC2A /* PDLocationsMapViewController.xib in Resources */,
 				2FFE430218FD7C0100D88F76 /* steve.jpg in Resources */,
 				2F18241D18F24ADF00A261B4 /* intro8.png in Resources */,
 				2F9CA22F18EFCA7F00DCE10A /* browse_n_shop.png in Resources */,
@@ -1316,6 +1395,7 @@
 				2FA2087118EFE91900719F4F /* Coupons.png in Resources */,
 				2F80313B19001174002D7C0E /* StarEmpty.png in Resources */,
 				2F79568B18F5AC4800B380D7 /* CartTableViewCell.xib in Resources */,
+				2F4C54831912A899008DDC2A /* SideMenuViewController.xib in Resources */,
 				2FFA9AEB18FF907400E60094 /* cancel.png in Resources */,
 				2FA8A95918FFE2A7008ACD4B /* TableCell.xib in Resources */,
 				840156DE18B3C99F0054354F /* login_bg.jpg in Resources */,
@@ -1388,6 +1468,7 @@
 				2FA14EEF18E1C18000B77CF6 /* STTwitterAppOnly.m in Sources */,
 				2FAAA1FE18EC464200B0CF8C /* ProductDisplayViewController.m in Sources */,
 				84D49E8B18B2E2DE008878E1 /* main.m in Sources */,
+				2F4C546F191296EA008DDC2A /* MapPoint.m in Sources */,
 				2FA14EF318E1C18000B77CF6 /* STTwitterOSRequest.m in Sources */,
 				3CB04C4018B35AC300C10CC8 /* SBJsonWriter.m in Sources */,
 				2FBC444519078C9500B1A6AC /* UserProductSelectionListViewController.m in Sources */,
@@ -1411,6 +1492,7 @@
 				2FB578E318D9EA69005CA82A /* LoginViewController.m in Sources */,
 				2FAAA20A18EC518E00B0CF8C /* BrowsDisplayViewController.m in Sources */,
 				2FA14EF018E1C18000B77CF6 /* STTwitterHTML.m in Sources */,
+				2F4C547E1912A7FA008DDC2A /* IIWrapController.m in Sources */,
 				2FFE430018FD713A00D88F76 /* CouponsViewController.m in Sources */,
 				3CB04C1718B35AB600C10CC8 /* ASIDownloadCache.m in Sources */,
 				2FA4DC9D18DC80C00092CCAC /* EGOImageButton.m in Sources */,
@@ -1435,6 +1517,7 @@
 				3CB04C3618B35AC300C10CC8 /* SBJsonParser.m in Sources */,
 				2FA14EF518E1C18000B77CF6 /* JSONSyntaxHighlight.m in Sources */,
 				2F23520D18FCF36F0036DE79 /* RegisterViewController.m in Sources */,
+				2F4C54821912A899008DDC2A /* SideMenuViewController.m in Sources */,
 				2FA8A95718FFE288008ACD4B /* TableCell.m in Sources */,
 				3CB04BFC18B35A8300C10CC8 /* MBProgressHUD.m in Sources */,
 				3CB04C3D18B35AC300C10CC8 /* SBJsonStreamWriterState.m in Sources */,
@@ -1450,6 +1533,7 @@
 				3CB04C1618B35AB600C10CC8 /* ASIDataDecompressor.m in Sources */,
 				3CB04C3A18B35AC300C10CC8 /* SBJsonStreamParserState.m in Sources */,
 				3CB04C1318B35AB600C10CC8 /* Reachability.m in Sources */,
+				2F4C5471191296EA008DDC2A /* PDLocationsMapViewController.m in Sources */,
 				3CB04C1B18B35AB600C10CC8 /* ASINetworkQueue.m in Sources */,
 				2FBC444E1907979800B1A6AC /* GroceriesViewController.m in Sources */,
 				2F0C1E6618ED3B2400975399 /* UserProfileViewController.m in Sources */,
@@ -1458,6 +1542,7 @@
 				2F0C1E6118ED338B00975399 /* UserrSettingsViewController.m in Sources */,
 				2F0C1E7018ED46B800975399 /* UserFeedBackViewController.m in Sources */,
 				3CB04C1418B35AB600C10CC8 /* ASIAuthenticationDialog.m in Sources */,
+				2F4C5460191296A7008DDC2A /* SignUpViewController.m in Sources */,
 				2FA14EF418E1C18000B77CF6 /* BAVPlistNode.m in Sources */,
 				2FBDF46918F834C1008481C0 /* ShopItemCell.m in Sources */,
 				2FA4DC9E18DC80C00092CCAC /* EGOImageLoader.m in Sources */,
@@ -1467,7 +1552,9 @@
 				2FA14EF618E1C18000B77CF6 /* STHTTPRequest.m in Sources */,
 				3CB04C3518B35AC300C10CC8 /* NSObject+SBJson.m in Sources */,
 				2FA4DCA018DC80C00092CCAC /* EGOImageView.m in Sources */,
+				2F4C547D1912A7FA008DDC2A /* IIViewDeckController.m in Sources */,
 				3CB04BF318B3238200C10CC8 /* CategoryView.m in Sources */,
+				2F4C5470191296EA008DDC2A /* PDLocation.m in Sources */,
 				2FB9C3FD1908EAEF00975CBC /* ShopViewController.m in Sources */,
 				2FBC44511907A0B000B1A6AC /* WishListViewController.m in Sources */,
 				3CB04C3F18B35AC300C10CC8 /* SBJsonUTF8Stream.m in Sources */,
