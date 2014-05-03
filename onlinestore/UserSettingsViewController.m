@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Rajasekhar. All rights reserved.
 //
 
-#import "UserrSettingsViewController.h"
+#import "UserSettingsViewController.h"
 #import "ASIFormDataRequest.h"
 #import "MBProgressHUD.h"
-@interface UserrSettingsViewController ()
+@interface UserSettingsViewController ()
 
 @end
 
-@implementation UserrSettingsViewController
+@implementation UserSettingsViewController
 //@synthesize myScrool,pushBtn,smsBtn,emailBtn,screenlockBtn,bannerBtn,bluetoothBtn,wifiBtn,sslBtn,gpsBtn,webserverBtn;
 @synthesize myScrool,pushArr,smsArr,screenLockArr,bannerArr,bleutoothArr,wifiArr,gpsArr,webserverArr,sslArr,emailArr,bluetoothSwitch,bannerSwitch,smsBSwitch,pushSwitch,emailSwitch,gpsSwitch,sslSwitch,screenlockBSwitch,webserverSwitch,wifiSwitch;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

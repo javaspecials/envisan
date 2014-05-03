@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F003E8718F10E97002220BD /* Offer and Deals.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F003E8618F10E97002220BD /* Offer and Deals.png */; };
 		2F077A2018F4FC0700353D85 /* UseLongPro.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F077A1F18F4FC0700353D85 /* UseLongPro.json */; };
-		2F0C1E6118ED338B00975399 /* UserrSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C1E6018ED338B00975399 /* UserrSettingsViewController.m */; };
+		2F0C1E6118ED338B00975399 /* UserSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C1E6018ED338B00975399 /* UserSettingsViewController.m */; };
 		2F0C1E6318ED35A000975399 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C1E6218ED35A000975399 /* images.png */; };
 		2F0C1E6618ED3B2400975399 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C1E6518ED3B2400975399 /* UserProfileViewController.m */; };
 		2F0C1E6918ED3FCB00975399 /* UsereProDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C1E6818ED3FCB00975399 /* UsereProDisplayViewController.m */; };
@@ -18,10 +18,15 @@
 		2F0C1E7018ED46B800975399 /* UserFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C1E6F18ED46B800975399 /* UserFeedBackViewController.m */; };
 		2F0C1E7318ED678100975399 /* intro6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C1E7118ED678100975399 /* intro6.png */; };
 		2F0C1E7418ED678100975399 /* intro7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C1E7218ED678100975399 /* intro7.png */; };
+		2F139D141914D9E700D8CE73 /* SettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F139D131914D9E700D8CE73 /* SettingsCell.m */; };
+		2F139D161914DA0A00D8CE73 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F139D151914DA0A00D8CE73 /* SettingsCell.xib */; };
 		2F15C28B18FE4D54007CD543 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F15C28A18FE4D54007CD543 /* QuartzCore.framework */; };
 		2F18241D18F24ADF00A261B4 /* intro8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F18241C18F24ADF00A261B4 /* intro8.png */; };
 		2F2230C318DF31C30041D10E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2230C218DF31C30041D10E /* FacebookSDK.framework */; };
 		2F23520D18FCF36F0036DE79 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23520C18FCF36F0036DE79 /* RegisterViewController.m */; };
+		2F27072A19141E5900D80DEE /* ShopDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F27072919141E5900D80DEE /* ShopDisplayViewController.m */; };
+		2F27072D19141E8500D80DEE /* PlanToByeDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F27072C19141E8500D80DEE /* PlanToByeDisplayViewController.m */; };
+		2F27073019141EB300D80DEE /* GroceriesDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F27072F19141EB300D80DEE /* GroceriesDisplayViewController.m */; };
 		2F2CF21118F1711100AEA06A /* ALAlertBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CF20518F1711100AEA06A /* ALAlertBanner.m */; };
 		2F2CF21218F1711100AEA06A /* ALAlertBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CF20718F1711100AEA06A /* ALAlertBannerManager.m */; };
 		2F2CF21318F1711100AEA06A /* bannerAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2CF20918F1711100AEA06A /* bannerAlert.png */; };
@@ -245,8 +250,8 @@
 /* Begin PBXFileReference section */
 		2F003E8618F10E97002220BD /* Offer and Deals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Offer and Deals.png"; sourceTree = "<group>"; };
 		2F077A1F18F4FC0700353D85 /* UseLongPro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UseLongPro.json; sourceTree = "<group>"; };
-		2F0C1E5F18ED338B00975399 /* UserrSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserrSettingsViewController.h; sourceTree = "<group>"; };
-		2F0C1E6018ED338B00975399 /* UserrSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserrSettingsViewController.m; sourceTree = "<group>"; };
+		2F0C1E5F18ED338B00975399 /* UserSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsViewController.h; sourceTree = "<group>"; };
+		2F0C1E6018ED338B00975399 /* UserSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsViewController.m; sourceTree = "<group>"; };
 		2F0C1E6218ED35A000975399 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		2F0C1E6418ED3B2400975399 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
 		2F0C1E6518ED3B2400975399 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
@@ -259,11 +264,20 @@
 		2F0C1E7118ED678100975399 /* intro6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro6.png; sourceTree = "<group>"; };
 		2F0C1E7218ED678100975399 /* intro7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro7.png; sourceTree = "<group>"; };
 		2F0F1269190FB0D70036CC7B /* IconSlide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconSlide.png; sourceTree = "<group>"; };
+		2F139D121914D9E700D8CE73 /* SettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsCell.h; sourceTree = "<group>"; };
+		2F139D131914D9E700D8CE73 /* SettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsCell.m; sourceTree = "<group>"; };
+		2F139D151914DA0A00D8CE73 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		2F15C28A18FE4D54007CD543 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2F18241C18F24ADF00A261B4 /* intro8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro8.png; sourceTree = "<group>"; };
 		2F2230C218DF31C30041D10E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		2F23520B18FCF36F0036DE79 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		2F23520C18FCF36F0036DE79 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		2F27072819141E5900D80DEE /* ShopDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDisplayViewController.h; sourceTree = "<group>"; };
+		2F27072919141E5900D80DEE /* ShopDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDisplayViewController.m; sourceTree = "<group>"; };
+		2F27072B19141E8500D80DEE /* PlanToByeDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanToByeDisplayViewController.h; sourceTree = "<group>"; };
+		2F27072C19141E8500D80DEE /* PlanToByeDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanToByeDisplayViewController.m; sourceTree = "<group>"; };
+		2F27072E19141EB300D80DEE /* GroceriesDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceriesDisplayViewController.h; sourceTree = "<group>"; };
+		2F27072F19141EB300D80DEE /* GroceriesDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceriesDisplayViewController.m; sourceTree = "<group>"; };
 		2F2CF20318F1711100AEA06A /* ALAlertBanner+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAlertBanner+Private.h"; sourceTree = "<group>"; };
 		2F2CF20418F1711100AEA06A /* ALAlertBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAlertBanner.h; sourceTree = "<group>"; };
 		2F2CF20518F1711100AEA06A /* ALAlertBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAlertBanner.m; sourceTree = "<group>"; };
@@ -698,6 +712,9 @@
 				2FA8A95518FFE288008ACD4B /* TableCell.h */,
 				2FA8A95618FFE288008ACD4B /* TableCell.m */,
 				2FA8A95818FFE2A7008ACD4B /* TableCell.xib */,
+				2F139D121914D9E700D8CE73 /* SettingsCell.h */,
+				2F139D131914D9E700D8CE73 /* SettingsCell.m */,
+				2F139D151914DA0A00D8CE73 /* SettingsCell.xib */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -1027,8 +1044,8 @@
 				2FAAA20618EC516800B0CF8C /* BrowsAndShopViewController.m */,
 				2FAAA20818EC518E00B0CF8C /* BrowsDisplayViewController.h */,
 				2FAAA20918EC518E00B0CF8C /* BrowsDisplayViewController.m */,
-				2F0C1E5F18ED338B00975399 /* UserrSettingsViewController.h */,
-				2F0C1E6018ED338B00975399 /* UserrSettingsViewController.m */,
+				2F0C1E5F18ED338B00975399 /* UserSettingsViewController.h */,
+				2F0C1E6018ED338B00975399 /* UserSettingsViewController.m */,
 				2F0C1E6418ED3B2400975399 /* UserProfileViewController.h */,
 				2F0C1E6518ED3B2400975399 /* UserProfileViewController.m */,
 				2F0C1E6718ED3FCB00975399 /* UsereProDisplayViewController.h */,
@@ -1049,14 +1066,20 @@
 				2FBC444419078C9500B1A6AC /* UserProductSelectionListViewController.m */,
 				2FB9C3FB1908EAEF00975CBC /* ShopViewController.h */,
 				2FB9C3FC1908EAEF00975CBC /* ShopViewController.m */,
+				2F27072819141E5900D80DEE /* ShopDisplayViewController.h */,
+				2F27072919141E5900D80DEE /* ShopDisplayViewController.m */,
 				2FBC444F1907A0B000B1A6AC /* WishListViewController.h */,
 				2FBC44501907A0B000B1A6AC /* WishListViewController.m */,
-				2FBC44491907964700B1A6AC /* PlanToByeViewController.h */,
-				2FBC444A1907964700B1A6AC /* PlanToByeViewController.m */,
-				2FBC444C1907979800B1A6AC /* GroceriesViewController.h */,
-				2FBC444D1907979800B1A6AC /* GroceriesViewController.m */,
 				2FBC4446190793A000B1A6AC /* WishDisplayViewController.h */,
 				2FBC4447190793A000B1A6AC /* WishDisplayViewController.m */,
+				2FBC44491907964700B1A6AC /* PlanToByeViewController.h */,
+				2FBC444A1907964700B1A6AC /* PlanToByeViewController.m */,
+				2F27072B19141E8500D80DEE /* PlanToByeDisplayViewController.h */,
+				2F27072C19141E8500D80DEE /* PlanToByeDisplayViewController.m */,
+				2FBC444C1907979800B1A6AC /* GroceriesViewController.h */,
+				2FBC444D1907979800B1A6AC /* GroceriesViewController.m */,
+				2F27072E19141EB300D80DEE /* GroceriesDisplayViewController.h */,
+				2F27072F19141EB300D80DEE /* GroceriesDisplayViewController.m */,
 				2F4C545D191296A7008DDC2A /* SignUpViewController.h */,
 				2F4C545E191296A7008DDC2A /* SignUpViewController.m */,
 				2F4C545F191296A7008DDC2A /* SignUpViewController.xib */,
@@ -1304,6 +1327,7 @@
 				2FC4528918F85B1C00E9FE33 /* c.png in Resources */,
 				2FC4528818F85B1C00E9FE33 /* b.png in Resources */,
 				2F0C1E6D18ED404B00975399 /* camera.png in Resources */,
+				2F139D161914DA0A00D8CE73 /* SettingsCell.xib in Resources */,
 				84D49E8918B2E2DE008878E1 /* InfoPlist.strings in Resources */,
 				2F80314119001174002D7C0E /* StarFullLarge.png in Resources */,
 				2F4C546D191296EA008DDC2A /* close-button.png in Resources */,
@@ -1504,6 +1528,7 @@
 				2FAFAB4018EDA00F00598559 /* FHSTwitterEngine.m in Sources */,
 				3CB04C1518B35AB600C10CC8 /* ASIDataCompressor.m in Sources */,
 				2F79569018F5ACDE00B380D7 /* DataHandler.m in Sources */,
+				2F27072D19141E8500D80DEE /* PlanToByeDisplayViewController.m in Sources */,
 				2F0C1E6918ED3FCB00975399 /* UsereProDisplayViewController.m in Sources */,
 				3CB04C3C18B35AC300C10CC8 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				2FBAE7D0190A237E0097B187 /* LandingPlanToBuyListViewController.m in Sources */,
@@ -1514,6 +1539,7 @@
 				2FBAE7CD190A235E0097B187 /* LandingShopListViewController.m in Sources */,
 				2FA4DC9F18DC80C00092CCAC /* EGOImageLoadConnection.m in Sources */,
 				2FBDF47118F8469E008481C0 /* TileView1.m in Sources */,
+				2F27072A19141E5900D80DEE /* ShopDisplayViewController.m in Sources */,
 				3CB04C3618B35AC300C10CC8 /* SBJsonParser.m in Sources */,
 				2FA14EF518E1C18000B77CF6 /* JSONSyntaxHighlight.m in Sources */,
 				2F23520D18FCF36F0036DE79 /* RegisterViewController.m in Sources */,
@@ -1523,6 +1549,7 @@
 				3CB04C3D18B35AC300C10CC8 /* SBJsonStreamWriterState.m in Sources */,
 				2FA14EEA18E1C18000B77CF6 /* NSDateFormatter+STTwitter.m in Sources */,
 				2FBDF46D18F8468D008481C0 /* HomeViewController1.m in Sources */,
+				2F27073019141EB300D80DEE /* GroceriesDisplayViewController.m in Sources */,
 				3CB04C1918B35AB600C10CC8 /* ASIHTTPRequest.m in Sources */,
 				2FA14EEB18E1C18000B77CF6 /* NSError+STTwitter.m in Sources */,
 				2FB578DE18D9E9F3005CA82A /* EAIntroPage.m in Sources */,
@@ -1539,13 +1566,14 @@
 				2F0C1E6618ED3B2400975399 /* UserProfileViewController.m in Sources */,
 				2FA14EED18E1C18000B77CF6 /* STHTTPRequest+STTwitter.m in Sources */,
 				2FFFEF2618E07CA300ED36DB /* ProductsViewController.m in Sources */,
-				2F0C1E6118ED338B00975399 /* UserrSettingsViewController.m in Sources */,
+				2F0C1E6118ED338B00975399 /* UserSettingsViewController.m in Sources */,
 				2F0C1E7018ED46B800975399 /* UserFeedBackViewController.m in Sources */,
 				3CB04C1418B35AB600C10CC8 /* ASIAuthenticationDialog.m in Sources */,
 				2F4C5460191296A7008DDC2A /* SignUpViewController.m in Sources */,
 				2FA14EF418E1C18000B77CF6 /* BAVPlistNode.m in Sources */,
 				2FBDF46918F834C1008481C0 /* ShopItemCell.m in Sources */,
 				2FA4DC9E18DC80C00092CCAC /* EGOImageLoader.m in Sources */,
+				2F139D141914D9E700D8CE73 /* SettingsCell.m in Sources */,
 				2FCD97C418DCB96900D5DA34 /* TileView.m in Sources */,
 				2F79568A18F5AC4800B380D7 /* CartTableViewCell.m in Sources */,
 				3CB04C1818B35AB600C10CC8 /* ASIFormDataRequest.m in Sources */,

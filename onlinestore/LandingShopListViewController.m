@@ -192,7 +192,7 @@
 //    [self.navigationController pushViewController:shopList animated:YES];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    LoginViewController *shopList = [sb instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    ShopViewController *shopList = [sb instantiateViewControllerWithIdentifier:@"ShopViewController"];
     [self presentViewController:shopList animated:YES completion:nil];
     //[self.navigationController pushViewController:shopList animated:YES];
 

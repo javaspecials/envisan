@@ -13,7 +13,7 @@
 #import "BuildingMapViewController.h"
 #import "PriceAndCompareViewController.h"
 #import "BrowsAndShopViewController.h"
-#import "UserrSettingsViewController.h"
+#import "UserSettingsViewController.h"
 #import "UserProfileViewController.h"
 #import "UserFeedBackViewController.h"
 #import "UsereProDisplayViewController.h"
@@ -284,7 +284,7 @@
             break;
             
         case 10:{
-            UserrSettingsViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserrSettingsViewController"];
+            UserSettingsViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserrSettingsViewController"];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

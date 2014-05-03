@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface UserrSettingsViewController : BaseViewController
+@interface UserSettingsViewController : BaseViewController
 {
     //IBOutlet UISwitch *mySwitch;
     UILabel *lblObj;

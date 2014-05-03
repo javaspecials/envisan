@@ -14,7 +14,7 @@
 #import "BuildingMapViewController.h"
 #import "PriceAndCompareViewController.h"
 #import "BrowsAndShopViewController.h"
-#import "UserrSettingsViewController.h"
+#import "UserSettingsViewController.h"
 #import "UserProfileViewController.h"
 #import "UserFeedBackViewController.h"
 #import "UsereProDisplayViewController.h"
@@ -279,7 +279,7 @@
             
             
         case 5:{
-            UserrSettingsViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserrSettingsViewController"];
+            UserSettingsViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserSettingsViewController"];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

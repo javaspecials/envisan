@@ -92,11 +92,12 @@ GPPSignIn *signIn;
     
     
     
+    
     SideMenuViewController *sideMenuViewController=[[SideMenuViewController alloc] initWithNibName:@"SideMenuViewController" bundle:nil];
     
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:homeViewController
                                                                                     leftViewController:sideMenuViewController];
-    deckController.leftSize = 170;
+    deckController.leftSize = 120;
     //deckController.leftSize=1024-275;
     [self.navigationController pushViewController:deckController animated:YES];
     

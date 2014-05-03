@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuViewController">
             <connections>
+                <outlet property="tableObj" destination="CEk-Cr-JXb" id="ufp-Pu-0K1"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -21,9 +22,12 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="settingsBtnTapp:" destination="-1" eventType="touchUpInside" id="3au-gI-W8I"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-cv-QWi">
-                    <rect key="frame" x="55" y="115" width="44" height="30"/>
+                    <rect key="frame" x="55" y="480" width="44" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Profile">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +35,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YX-aQ-bFv">
-                    <rect key="frame" x="54" y="156" width="82" height="30"/>
+                    <rect key="frame" x="54" y="521" width="82" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Preferences">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,13 +47,22 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="k.png" translatesAutoresizingMaskIntoConstraints="NO" id="EGI-lO-Bhk">
-                    <rect key="frame" x="10" y="112" width="37" height="33"/>
+                    <rect key="frame" x="10" y="477" width="37" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="g.png" translatesAutoresizingMaskIntoConstraints="NO" id="msb-CD-xh8">
-                    <rect key="frame" x="10" y="153" width="37" height="33"/>
+                    <rect key="frame" x="10" y="518" width="37" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="CEk-Cr-JXb">
+                    <rect key="frame" x="3" y="110" width="213" height="362"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="iQ0-8q-P33"/>
+                        <outlet property="delegate" destination="-1" id="f7b-Cx-Em6"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

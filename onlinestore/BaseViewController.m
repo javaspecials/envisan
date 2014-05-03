@@ -63,9 +63,25 @@
 }
 
 -(IBAction)sideMenuTap:(id)sender{
- 
-    [self.viewDeckController openLeftViewAnimated:YES];
+    
+    
+    if (isOpen == NO) {
+        
+       
+        
+        [self.viewDeckController openLeftViewAnimated:YES];
+        isOpen =YES;
+        
 
+    }else
+    {
+      
+            [self.viewDeckController closeLeftViewAnimated:YES];
+            isOpen = NO;
+
+    }
+ 
+    
 
 }
 

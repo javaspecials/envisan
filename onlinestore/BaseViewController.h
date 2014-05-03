@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController{
+    
+    BOOL isOpen;
+    BOOL isclose;
+
 }
 @property (weak, nonatomic) IBOutlet UILabel *cartCountLabel;
 
