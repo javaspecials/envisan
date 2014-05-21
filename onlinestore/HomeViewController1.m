@@ -285,7 +285,7 @@
             break;
             
         case 6:{
-            UserProductSelectionListViewController *vc =[sb instantiateViewControllerWithIdentifier:@"Wish1ViewController"];
+            UserProductSelectionListViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserProductSelectionListViewController"];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
@@ -303,13 +303,13 @@
             break;
         
         
-        case 9:{
+        case 10:{
             UserFeedBackViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserPreferenceViewController"];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             
-        case 10:{
+        case 11:{
             UserProfileViewController *vc =[sb instantiateViewControllerWithIdentifier:@"UserProfileViewController"];
             [self.navigationController pushViewController:vc animated:YES];
         }

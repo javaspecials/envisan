@@ -10,6 +10,8 @@
 #import "DataHandler.h"
 #import "CartViewController.h"
 #import "IIViewDeckController.h"
+#import "SideMenuViewController.h"
+#import "HomeViewController.h"
 
 @interface BaseViewController ()
 
@@ -30,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+   // isOpen = NO;
 }
 -(void)viewDidAppear:(BOOL)animated{
 
@@ -64,25 +68,22 @@
 
 -(IBAction)sideMenuTap:(id)sender{
     
-    
     if (isOpen == NO) {
         
-       
+        
         
         [self.viewDeckController openLeftViewAnimated:YES];
         isOpen =YES;
         
-
+        
     }else
     {
-      
-            [self.viewDeckController closeLeftViewAnimated:YES];
-            isOpen = NO;
-
+        
+        [self.viewDeckController closeLeftViewAnimated:YES];
+        isOpen = NO;
+        
     }
- 
     
-
 }
 
 -(IBAction)cartButtonTap:(id)sender{

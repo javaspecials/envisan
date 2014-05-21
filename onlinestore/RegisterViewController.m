@@ -100,18 +100,18 @@ NSMutableDictionary *dic;
     table.hidden=YES;
     
 }
--(BOOL) validateEmail:(NSString*) emailString
-{
-    NSString *regExPattern = @"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$";
-    NSRegularExpression *regEx = [[NSRegularExpression alloc] initWithPattern:regExPattern options:NSRegularExpressionCaseInsensitive error:nil];
-    NSUInteger regExMatches = [regEx numberOfMatchesInString:emailString options:0 range:NSMakeRange(0, [emailString length])];
-    NSLog(@"%i", regExMatches);
-    if (regExMatches == 0) {
-        return NO;
-    }
-    else
-        return YES;
-}
+//-(BOOL) validateEmail:(NSString*) emailString
+//{
+//    NSString *regExPattern = @"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$";
+//    NSRegularExpression *regEx = [[NSRegularExpression alloc] initWithPattern:regExPattern options:NSRegularExpressionCaseInsensitive error:nil];
+//    NSUInteger regExMatches = [regEx numberOfMatchesInString:emailString options:0 range:NSMakeRange(0, [emailString length])];
+//    NSLog(@"%i", regExMatches);
+//    if (regExMatches == 0) {
+//        return NO;
+//    }
+//    else
+//        return YES;
+//}
 - (IBAction)saveBtnTapp:(id)sender
 {
      [self textfieldValidation];
@@ -133,8 +133,9 @@ NSMutableDictionary *dic;
         [ErrorAlert show];
     }
     
-    else{
-        if ([self validateEmail:self.emailAddrTxf.text]==YES) {
+    //else{
+        
+        /*if ([self validateEmail:self.emailAddrTxf.text]==YES) {
             [self webServiceCalling];
             
         }
@@ -145,8 +146,8 @@ NSMutableDictionary *dic;
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
             [alert show];
-        }
-            }
+        }*/
+           // }
 }
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string

@@ -172,7 +172,7 @@ ASIFormDataRequest *categoriesRequest;
             NSString *str = [[NSString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
             NSLog(@"%@",str);
             
-            LandingPlanToBuyListViewController *planList = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingPlanToBuyListViewController"];
+            LandingWishListViewController *planList = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingWishListViewController"];
             [self presentViewController:planList animated:YES completion:nil];
             
             
@@ -312,14 +312,7 @@ ASIFormDataRequest *categoriesRequest;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    
-//    LandingPlanToBuyListViewController *planList = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingPlanToBuyListViewController"];
-//    [self presentViewController:planList animated:YES completion:nil];
-
-    
-    
-    
-    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Shopwishplatems.json"];
+                 NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Shopwishplatems.json"];
     
     NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
     ////WEBSERVICE CALL
@@ -357,7 +350,7 @@ ASIFormDataRequest *categoriesRequest;
      [dic setObject:@"454545" forKey:@"userid"];
 
      [dic setObject:[decArr objectAtIndex:indexPath.row] forKey:@"item"];
-    [dic setObject:@"p" forKey:@"SHOP_WISH_PLAN_MYCART"];
+    [dic setObject:@"W" forKey:@"SHOP_WISH_PLAN_MYCART"];
 
    
     
@@ -385,93 +378,8 @@ ASIFormDataRequest *categoriesRequest;
          MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             hud.labelText = @"Saving Details..";
     }
-//    [totaArrObj addObject:[decArr objectAtIndex:indexPath.row]];
-//    planList.iteamArrObj=totaArrObj ;
-//    NSLog(@"%@",planList.iteamArrObj);
-    
-//    [self presentViewController:planList animated:YES completion:nil];
-    
-    //[self.navigationController pushViewController:shopList animated:YES];
-    
-    
-    
-   //planList.iteamArrObj = [decArr objectAtIndex:indexPath.row];
-    
-    
-    //NSLog(@"%@",planList.iteamArrObj);
-    
+
     
 }
-
-/*-(void)postDataService
-{
-    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Shopwishplatems.json"];
-    
-    NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
-    ////WEBSERVICE CALL
-    //    NSURL *url = [NSURL URLWithString:urlString];
-    //    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    //    [request setDelegate:self];
-    //    [request startAsynchronous];
-    
-    
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:someUrl];
-    //    [request setRequestMethod:@"POST"];
-    //    [request setPostValue:self.useNameTxf.text forKey:@"username"];
-    //    [request setPostValue:self.pwdTxt.text forKey:@"password"];
-    //    [request setPostValue:self.fNameTxt.text forKey:@"firstname"];
-    //    [request setPostValue:self.lNameTxt.text forKey:@"id"];
-    //
-    
-    
-    dic=[[NSMutableDictionary alloc] init];
-    
-    //[totaArrObj addObject:[decArr objectAtIndex:indexPath.row]];
-
-    /*[dic setObject:@"1575095" forKey:@"id"];
-     [dic setObject:@"dkaran" forKey:@"username"];
-     [dic setObject:@"d4297" forKey:@"password"];
-     [dic setObject:@"bpau" forKey:@"firstname"];*/
-    
-    
-    //[dic setObject:@"SHOP_WISH_PLAN_MYCART" forKey:@"W"];
-    /*[dic setObject:@"454545" forKey:@"userid"];
-    [dic setObject:self.productNameTxf.text forKey:@"item"];
-    [dic setObject:self.frequencyTxf.text forKey:@"frequancy"];
-    [dic setObject:self.storeTxf.text forKey:@"storeid"];
-    [dic setObject:self.quantityTxf.text forKey:@"quantity"];
-    [dic setObject:self.brandTxf.text forKey:@"brand"];
-    [dic setObject:self.modelTxf.text forKey:@"model"];
-    [dic setObject:@"g" forKey:@"SHOP_WISH_PLAN_MYCART"];
-    */
-    
-    //    [dic setObject:self.addressTxtView.text forKey:@"address1"];
-    //    [dic setObject:self.stateNameTxf.text forKey:@"state"];
-    //    [dic setObject:self.cityNameTxf.text forKey:@"city"];
-    //[dic setObject:self.countryNameTxf.text forKey:@"country"];
-    
-    
-   /* NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic
-                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
-                                                         error:&error];
-    
-    if (! jsonData) {
-        NSLog(@"Got an error: %@", error);
-    } else {
-        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        
-        
-        [request appendPostData:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
-        [request setDelegate:self];
-        [request startSynchronous];
-        
-        // MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        //hud.labelText = @"Saving Details..";
-    }
-
-}
-*/
-
 
 @end

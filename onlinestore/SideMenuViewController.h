@@ -8,16 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "SettingsCell.h"
+#import "BaseViewController.h"
 
-@interface SideMenuViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-{
-    
-     IBOutlet UITableView *tableObj;
-   IBOutlet SettingsCell *scell;
-}
+@interface SideMenuViewController : BaseViewController
 @property(strong,nonatomic)IBOutlet SettingsCell *scell;
 - (IBAction)settingsBtnTapp:(id)sender;
-@property (strong,nonatomic)NSArray *arrObj,*ntfObj,*totalObj;
-@property(strong,nonatomic)NSArray *pushArr,*smsArr,*emailArr,*screenLockArr,*bannerArr,*bleutoothArr,*webserverArr,*wifiArr,*gpsArr,*sslArr;
-@property(strong,nonatomic)NSString *pushStr,*smsStr,*emailStr,*screenLockStr,*bannerStr,*bluetoothStr,*webserverStr,*wifiStr,*gpsStr,*sslStr;
+- (IBAction)preferenceBtnTapp:(id)sender;
+- (IBAction)profileBtnTapp:(id)sender;
+
 @end

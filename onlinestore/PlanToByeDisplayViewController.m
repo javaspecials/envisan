@@ -153,16 +153,7 @@ ASIFormDataRequest *categoriesRequest;
         } else if (request.responseStatusCode == 200) {
             
             
-            //[self prepareDataFromJSONData:request.responseData];
-            // [self prepareDataFromJSONDataForitemList:request.responseData];
-            
-            
-            
-            // NSDictionary *categoryDic=[categories objectAtIndex:selectedCategoryIndex];
-            //int categoryId=[[categoryDic objectForKey:@"id"] intValue];
-            
-            //  [self sendItemsRequestWithCategoryId:categoryId];
-            //[self sendPromoItemsRequestWithCategoryId:categoryId];
+         
             
             NSString *str = [[NSString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
             NSLog(@"%@",str);
@@ -263,7 +254,7 @@ ASIFormDataRequest *categoriesRequest;
      */
     
     
-    
+   /*
     ShopItemCell *cell;
     static NSString *CellIdentifier = @"ShopItemCell";
 	cell = (ShopItemCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -274,7 +265,7 @@ ASIFormDataRequest *categoriesRequest;
         
         cell.title.text=decArr[indexPath.row];
         // NSArray *strObj = [NSString stringWithFormat:@"%id",mrpArr ]
-        cell.price.text =[mrpArr[indexPath.row] stringValue];
+        cell.price.text =[mrpArr[indexPath.row] stringValue];*/
         
         //        if (tableView == self.searchDisplayController.searchResultsTableView) {
         //            cell.title.text = [_searchReasultObj objectAtIndex:indexPath.row];
@@ -282,15 +273,27 @@ ASIFormDataRequest *categoriesRequest;
         //        } else {
         //            cell.price.text = [decArr objectAtIndex:indexPath.row];
         //        }
-        
+    
+    NSString *cellIdenifier = @"Cell";
+    
+    BrowseCell *cell = (BrowseCell *)[tableView dequeueReusableCellWithIdentifier:cellIdenifier];
+    if (cell==nil) {
+        [[NSBundle mainBundle]loadNibNamed:@"BrowseCell" owner:self options:nil];
+        //cell = [nib objectAtIndex:0];
+        cell=scell;
         
 	}
     
-    
+    cell.nameLbl.text = decArr[indexPath.row];
+    cell.imgViewObj.image = [UIImage imageNamed:[imgArry objectAtIndex:indexPath.row]];
+    cell.priceLbl.text = mrpArr[indexPath.row];
+
+
+   /*
     EGOImageView *imageIconView=[[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:@"icon72x72.png"]];
     imageIconView.imageURL = [NSURL URLWithString:imgArry[indexPath.row]];
     imageIconView.frame=CGRectMake(0, 0, 62, 71);
-    [cell addSubview:imageIconView];
+    [cell addSubview:imageIconView];*/
     return cell;
     
     
@@ -348,11 +351,11 @@ ASIFormDataRequest *categoriesRequest;
      [dic setObject:@"d4297" forKey:@"password"];
      [dic setObject:@"bpau" forKey:@"firstname"];*/
     
-    
-    [dic setObject:@"454545" forKey:@"userid"];
+    //[dic setObject:@"666" forKey:@"id"];
+    [dic setObject:@"959595" forKey:@"userid"];
     
     [dic setObject:[decArr objectAtIndex:indexPath.row] forKey:@"item"];
-    [dic setObject:@"p" forKey:@"SHOP_WISH_PLAN_MYCART"];
+    [dic setObject:@"P" forKey:@"SHOP_WISH_PLAN_MYCART"];
     
     
     
@@ -377,8 +380,8 @@ ASIFormDataRequest *categoriesRequest;
         [postRequest setDelegate:self];
         [postRequest startSynchronous];
         
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.labelText = @"Saving Details..";
+       // MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+       // hud.labelText = @"Saving Details..";
     }
     //    [totaArrObj addObject:[decArr objectAtIndex:indexPath.row]];
     //    planList.iteamArrObj=totaArrObj ;

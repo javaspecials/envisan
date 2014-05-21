@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BrowseCell.h"
 
 @interface PlanToByeDisplayViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchDisplayDelegate>
 {
     //IBOutlet  UITableView *tableObj;
     IBOutlet UITableView *tableObj;
    // AppDelegate *appDelegate;
+   // IBOutlet UITableView *tableObj;
+    IBOutlet BrowseCell *scell;
     
 }
 //- (IBAction)productNameTxfBt:(id)sender;

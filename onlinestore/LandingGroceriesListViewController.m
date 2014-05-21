@@ -138,4 +138,10 @@
     GroceriesViewController *grociresList = [self.storyboard instantiateViewControllerWithIdentifier:@"GroceriesViewController"];
     [self presentViewController:grociresList animated:YES completion:nil];
 }
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [tableObj reloadData];
+    
+}
 @end

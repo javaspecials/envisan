@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HomeViewController.h"
 @interface BaseViewController : UIViewController{
     
     BOOL isOpen;
     BOOL isclose;
+    //HomeViewController *homeviewcontrollerObj;
 
 }
 @property (weak, nonatomic) IBOutlet UILabel *cartCountLabel;
-
+//@property (weak, nonatomic) HomeViewController *cartCountLabel;
 
 -(void)setHeaderView:(BOOL)flag;
 -(IBAction)homeClick:(id)sender;

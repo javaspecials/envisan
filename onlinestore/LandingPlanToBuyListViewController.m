@@ -136,7 +136,11 @@
     [tableObj reloadData];
     [super viewWillAppear:YES];
 }
-
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [tableObj reloadData];
+    
+}
 - (IBAction)planBtnTapp:(id)sender {
     
     PlanToByeViewController *plan = [self.storyboard instantiateViewControllerWithIdentifier:@"PlanToByeViewController"];

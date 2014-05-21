@@ -49,7 +49,11 @@
     hud.labelText = @"Loading Shop Items..";
 }
 
-
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [tableObj reloadData];
+    
+}
 
 #pragma mark -
 #pragma mark ASIFormDataRequest Delegate Methods
@@ -156,25 +160,6 @@
     
 }
 
-#pragma mark - UISearchDisplayController delegate methods
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    return 107;
-//    
-//}
--(void)viewWillDisappear:(BOOL)animated
-{
-    
-    //UITableView *tv = (UITableView *)self.view;
-    
-   // [tv beginUpdates];
-    
-    //[tv insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationRight];
-    //[tv deleteRowsAtIndexPaths:deleteIndexPaths withRowAnimation:UITableViewRowAnimationFade];
-    
-    //[tv insertRowsAtIndexPaths:iteamArrObj withRowAnimation:UITableViewRowAnimationAutomatic];
-    //[tv endUpdates];
-}
 
 - (void)didReceiveMemoryWarning
 {

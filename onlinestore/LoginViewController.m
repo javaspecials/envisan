@@ -18,7 +18,8 @@
 
 #import "SideMenuViewController.h"
 #import "IIViewDeckController.h"
-
+#import "SignUpViewController.h"
+#import "DemoViewController.h"
 
 
 
@@ -77,8 +78,13 @@ GPPSignIn *signIn;
 
 - (IBAction)signUpTap:(id)sender {
     
-    SignUpViewController *signUpViewController=[[SignUpViewController alloc]initWithNibName:@"SignUpViewController" bundle:nil];
+    SignUpViewController *signUpViewController=[[SignUpViewController alloc]initWithNibName:@"SignUpViewController1" bundle:nil];
+    
+
     [self.navigationController pushViewController:signUpViewController animated:YES];
+    
+//    DemoViewController *demo = [[DemoViewController alloc] initWithNibName:@"DemoViewController" bundle:nil];
+//   [self.navigationController pushViewController:demo animated:YES];
 }
 
 
@@ -100,6 +106,7 @@ GPPSignIn *signIn;
     deckController.leftSize = 120;
     //deckController.leftSize=1024-275;
     [self.navigationController pushViewController:deckController animated:YES];
+    
     
     
     

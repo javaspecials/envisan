@@ -166,7 +166,7 @@ ASIFormDataRequest *categoriesRequest;
             NSString *str = [[NSString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
             NSLog(@"%@",str);
             
-            LandingPlanToBuyListViewController *planList = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingPlanToBuyListViewController"];
+            LandingShopListViewController *planList = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingShopListViewController"];
             [self presentViewController:planList animated:YES completion:nil];
             
             
@@ -351,7 +351,7 @@ ASIFormDataRequest *categoriesRequest;
     [dic setObject:@"454545" forKey:@"userid"];
     
     [dic setObject:[decArr objectAtIndex:indexPath.row] forKey:@"item"];
-    [dic setObject:@"p" forKey:@"SHOP_WISH_PLAN_MYCART"];
+    [dic setObject:@"S" forKey:@"SHOP_WISH_PLAN_MYCART"];
     
     
     

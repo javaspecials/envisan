@@ -151,12 +151,12 @@ UIView *pickerBackground;
     [self.countryNameTxf resignFirstResponder];
     [self.emaitAdrTxf resignFirstResponder];
     [self.zipCodeTxf resignFirstResponder];
-    [self.activeTxf resignFirstResponder];
+    //[self.activeTxf resignFirstResponder];
     [self.languageTxf resignFirstResponder];
-    [self.createDateTxf resignFirstResponder];
-    [self.createdByTxf resignFirstResponder];
-    [self.modifieDateTxf resignFirstResponder];
-    [self.modifiedByTxf resignFirstResponder];
+//    [self.createDateTxf resignFirstResponder];
+//    [self.createdByTxf resignFirstResponder];
+//    [self.modifieDateTxf resignFirstResponder];
+//    [self.modifiedByTxf resignFirstResponder];
     //[self.stateNameTxt resignFirstResponder];
     
     return YES;
@@ -166,123 +166,21 @@ UIView *pickerBackground;
     
     [self textfieldValidation];
     
-    //validations for the screen
- /*   greeting.text= @"";
-
-if([self.useNameTxf.text isEqualToString:@"^([A-Z0-9.@-_ ])*$" ])
-{
-    
-    [self alertStatus:@"Please enter Username" :@"Login Failed!"];
-    greeting.text = @"Please enter username.";
-  
-    return;
-}
-
-if([self.pwdTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-{
-    [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-    greeting.text = @"Please enter password.";
-    
-    return;
-}
-  
-  if([self.fNameTxttext isEqualToString:@"^([A-Z0-9.@-_ ])*$" ])
-  {
-  
-  [self alertStatus:@"Please enter Username" :@"Login Failed!"];
-  greeting.text = @"Please enter username.";
-  
-  return;
-  }
-  
-  if([self.lNameTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-  if([self.userAliasTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-  
-  if([self.dobTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$" ])
-  {
-  
-  [self alertStatus:@"Please enter Username" :@"Login Failed!"];
-  greeting.text = @"Please enter username.";
-  
-  return;
-  }
-  
-  if([self.cityNameTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-  if([self.stateNameTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-  
-  if([self.countryNameTxf.text isEqualToString:@"^([A-Z0-9.@-_ ])*$" ])
-  {
-  
-  [self alertStatus:@"Please enter Username" :@"Login Failed!"];
-  greeting.text = @"Please enter username.";
-  
-  return;
-  }
-  
-  if([self.emaitAdrTxf.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-  if([self.zipCodeTxf.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-  
-  if([self.activeTxf.text isEqualToString:@"^([A-Z0-9.@-_ ])*$" ])
-  {
-  
-  [self alertStatus:@"Please enter Username" :@"Login Failed!"];
-  greeting.text = @"Please enter username.";
-  
-  return;
-  }
-  
-  if([self.languageTxf.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
-  {
-  [self alertStatus:@"Please enter Password" :@"Login Failed!"];
-  greeting.text = @"Please enter password.";
-  
-  return;
-  }
-*/
-
+ 
 }
 
 
 
 -(void)webserViceCalling
 {
-    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Userdetail.json"];
+   // NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Updatebyuser/1003"];
+    
+    NSDictionary *userDetails=[DataHandler defaultHandler].userDetails;
+    
+    NSLog(@"ff%@",userDetails);
+
+    
+     NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Updatebyuser/%@",[userDetails objectForKey:@"id"]];
 
     NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
     ////WEBSERVICE CALL
@@ -326,7 +224,7 @@ if([self.pwdTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
     [dic setObject:self.emaitAdrTxf.text forKey:@"emailaddress"];
     [dic setObject:self.zipCodeTxf.text forKey:@"zipcode"];
     //[dic setObject:self.activeTxf.text forKey:@"activie"];
-    //[dic setObject:self.countryNameTxf.text forKey:@"firstname"];
+    //[dic setObject:self.countryNameTxf.text forKey:@"country"];
     [dic setObject:self.languageTxf.text forKey:@"language"];
     
 
@@ -353,8 +251,8 @@ if([self.pwdTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
     
     }
     
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Saving Details..";
+    //MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //hud.labelText = @"Saving Details..";
 
     
    }
@@ -478,6 +376,17 @@ if([self.pwdTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
             
         }
         
+    }else if([self.zipCodeTxf.text isEqualToString:@""])
+    {
+        int iValue;
+        
+        if (self.zipCodeTxf.text.length > 0 && [[NSScanner scannerWithString:self.zipCodeTxf.text] scanInt:&iValue]) {
+            //do smomething with iValue (int value from noOfPassengers.text)
+            NSLog(@"value entered correctly.");
+            return YES;
+        }
+//        else
+//            NSLog(@"Error: Only numerica values are accepted");
     }
     
     return YES;
@@ -557,8 +466,6 @@ if([self.pwdTxt.text isEqualToString:@"^([A-Z0-9.@-_ ])*$"])
     
 }
 
-- (IBAction)countryBtnTapp:(id)sender {
-}
 
 -(void)pickerChanged:(id)sender {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

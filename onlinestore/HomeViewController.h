@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+//#import "BaseViewController.h"
 
-@interface HomeViewController : BaseViewController{
+@interface HomeViewController : UIViewController{
     
     IBOutlet UIScrollView *tilesScrollView;
 }

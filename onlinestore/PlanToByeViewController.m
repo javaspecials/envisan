@@ -125,14 +125,15 @@ NSMutableDictionary *dic;
     
     
     //[dic setObject:@"SHOP_WISH_PLAN_MYCART" forKey:@"W"];
-    [dic setObject:@"454545" forKey:@"userid"];
+   // [dic setObject:@"8585" forKey:@"id"];
+    [dic setObject:@"90490" forKey:@"userid"];
     [dic setObject:self.productNameTxf.text forKey:@"item"];
     [dic setObject:self.frequencyTxf.text forKey:@"frequancy"];
     [dic setObject:self.storeTxf.text forKey:@"storeid"];
     [dic setObject:self.quantityTxf.text forKey:@"quantity"];
     [dic setObject:self.brandTxf.text forKey:@"brand"];
     [dic setObject:self.modelTxf.text forKey:@"model"];
-    [dic setObject:@"p" forKey:@"SHOP_WISH_PLAN_MYCART"];
+    [dic setObject:@"P" forKey:@"SHOP_WISH_PLAN_MYCART"];
 
     
     
@@ -230,6 +231,38 @@ NSMutableDictionary *dic;
         //[self webServiceCalling];
     }
 }
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    
+    
+    
+    if( (textField == self.productNameTxf) ||(textField == self.brandTxf))
+    {
+        NSCharacterSet *invalidCharSet = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"] invertedSet];
+        NSString *filtered = [[string componentsSeparatedByCharactersInSet:invalidCharSet] componentsJoinedByString:@""];
+        return [string isEqualToString:filtered];
+    }
+    if ((textField == self.quantityTxf) ||(textField == self.modelTxf) ||(textField == self.storeTxf)){
+        NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+        
+        NSString *expression = @"^([0-9]+)?(\\.([0-9]{1,2})?)?$";
+        
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression
+                                                                               options:NSRegularExpressionCaseInsensitive
+                                                                                 error:nil];
+        NSUInteger numberOfMatches = [regex numberOfMatchesInString:newString
+                                                            options:0
+                                                              range:NSMakeRange(0, [newString length])];
+        if (numberOfMatches == 0)
+            return NO;
+    }
+    
+    
+    return YES;
+    
+}
+
 - (IBAction)cancelBtnTapp:(id)sender {
     
     self.productNameTxf.text = @"";

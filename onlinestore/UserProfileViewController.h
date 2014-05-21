@@ -31,7 +31,6 @@
 @property(strong,nonatomic)UIDatePicker *picker;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrObj;
-- (IBAction)profileBtnTap:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *useNameTxf;
 @property (weak, nonatomic) IBOutlet UITextField *pwdTxt;
 @property (weak, nonatomic) IBOutlet UITextField *fNameTxt;
@@ -46,15 +45,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *countryNameTxf;
 @property (weak, nonatomic) IBOutlet UITextField *emaitAdrTxf;
 @property (weak, nonatomic) IBOutlet UITextField *zipCodeTxf;
-@property (weak, nonatomic) IBOutlet UITextField *activeTxf;
 @property (weak, nonatomic) IBOutlet UITextField *languageTxf;
-@property (weak, nonatomic) IBOutlet UITextField *createDateTxf;
-@property (weak, nonatomic) IBOutlet UITextField *createdByTxf;
-@property (weak, nonatomic) IBOutlet UITextField *modifieDateTxf;
-@property (weak, nonatomic) IBOutlet UITextField *modifiedByTxf;
+
 - (IBAction)submitBtnTapp:(id)sender;
 - (IBAction)datePickerBtnTapp:(id)sender;
-- (IBAction)langBtnTapp:(id)sender;
 @property(strong,nonatomic)NSArray *lanArrObj;
 -(void)webserViceCalling;
 -(void)textfieldValidation;

@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setHeaderView:YES];
+    //[self setHeaderView:YES];
     
     NSMutableArray *iconsLeft=[[NSMutableArray alloc] init];
     

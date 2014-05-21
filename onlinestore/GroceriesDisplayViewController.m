@@ -14,6 +14,7 @@
 #import "LandingWishListViewController.h"
 #import "LandingShopListViewController.h"
 #import "LandingPlanToBuyListViewController.h"
+#import "LandingGroceriesListViewController.h"
 
 @interface GroceriesDisplayViewController ()
 
@@ -166,8 +167,8 @@ ASIFormDataRequest *categoriesRequest;
             NSString *str = [[NSString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
             NSLog(@"%@",str);
             
-            LandingPlanToBuyListViewController *planList = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingPlanToBuyListViewController"];
-            [self presentViewController:planList animated:YES completion:nil];
+            LandingGroceriesListViewController *groceries = [self.storyboard instantiateViewControllerWithIdentifier:@"LandingWishListViewController"];
+            [self presentViewController:groceries animated:YES completion:nil];
             
             
             if ([str isEqualToString:@"true"]) {
@@ -348,10 +349,10 @@ ASIFormDataRequest *categoriesRequest;
      [dic setObject:@"bpau" forKey:@"firstname"];*/
     
     
-    [dic setObject:@"454545" forKey:@"userid"];
+    [dic setObject:@"9049494" forKey:@"userid"];
     
     [dic setObject:[decArr objectAtIndex:indexPath.row] forKey:@"item"];
-    [dic setObject:@"p" forKey:@"SHOP_WISH_PLAN_MYCART"];
+    [dic setObject:@"G" forKey:@"SHOP_WISH_PLAN_MYCART"];
     
     
     
@@ -376,25 +377,9 @@ ASIFormDataRequest *categoriesRequest;
         [postRequest setDelegate:self];
         [postRequest startSynchronous];
         
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.labelText = @"Saving Details..";
+       // MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+       // hud.labelText = @"Saving Details..";
     }
-    //    [totaArrObj addObject:[decArr objectAtIndex:indexPath.row]];
-    //    planList.iteamArrObj=totaArrObj ;
-    //    NSLog(@"%@",planList.iteamArrObj);
-    
-    //    [self presentViewController:planList animated:YES completion:nil];
-    
-    //[self.navigationController pushViewController:shopList animated:YES];
-    
-    
-    
-    //planList.iteamArrObj = [decArr objectAtIndex:indexPath.row];
-    
-    
-    //NSLog(@"%@",planList.iteamArrObj);
-    
-    
 }
 
 @end

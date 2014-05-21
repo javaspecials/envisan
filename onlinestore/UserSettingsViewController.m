@@ -12,7 +12,9 @@
 @interface UserSettingsViewController ()
 
 @end
-
+ASIFormDataRequest *getRequest;
+ASIFormDataRequest *updateRequest;
+NSURL *url ;
 @implementation UserSettingsViewController
 //@synthesize myScrool,pushBtn,smsBtn,emailBtn,screenlockBtn,bannerBtn,bluetoothBtn,wifiBtn,sslBtn,gpsBtn,webserverBtn;
 @synthesize myScrool,pushArr,smsArr,screenLockArr,bannerArr,bleutoothArr,wifiArr,gpsArr,webserverArr,sslArr,emailArr,bluetoothSwitch,bannerSwitch,smsBSwitch,pushSwitch,emailSwitch,gpsSwitch,sslSwitch,screenlockBSwitch,webserverSwitch,wifiSwitch;
@@ -38,6 +40,12 @@
     [myScrool setContentSize:CGSizeMake(320, 1100)];
     
     
+
+    
+    
+    
+    
+    
     [self getDetails];
     
     
@@ -54,29 +62,25 @@
 
 -(void)getDetails
 {
-    /* NSData *jdata = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"catlog" ofType:@"json"]];
-     
-     NSError *error ;
-     NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:jdata options:NSJSONReadingMutableContainers error:&error];
-     //NSLog(@"data:%@",[[[dict objectForKey:@"categories"]valueForKey:@"name"]objectAtIndex:2]);
-     imgArry= [[dict objectForKey:@"categories"]valueForKey:@"catgimgurl"];
-     NSLog(@"%@",imgArry);
-     //  nameArry = [[[dict objectForKey:@"categories"]valueForKey:@"items"]valueForKey:@"name"];
-     NSLog(@"itam:%@",nameArry);*/
     
-    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Fetchuserstngbyuid/454545"];
+    
+    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Fetchuserstngbyuid/ 1989895"];
     
     
     ////WEBSERVICE CALL
-    NSURL *url = [NSURL URLWithString:urlString];
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    [request setDelegate:self];
-    [request startAsynchronous];
+    
+    NSURL *apiUrl = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    // NSURL *urlObj = [NSURL URLWithString:urlString];
+    //NSURL *url = [NSURL URLWithString:urlString];
+    getRequest = [ASIFormDataRequest requestWithURL:apiUrl];
+    [getRequest setDelegate:self];
+    [getRequest startAsynchronous];
     
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Loading Settings..";
+    hud.labelText = @"Loading Shop Items..";
     
+
     
 }
 
@@ -87,7 +91,9 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     
-    
+    if (getRequest==request) {
+        
+   
     
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     
@@ -244,33 +250,12 @@
 
 
 
-
-
-            
-            
-            
-            
-            
-            
-           /* modifiedDateArr = [responseDict valueForKey:@"modifieddate"];
-            NSLog(@"modifidate %@:",modifiedDateArr);
-            
-            modifiedByArr = [responseDict valueForKey:@"modifiedby"];
-            NSLog(@"modifiby %@:",modifiedByArr);
-            
-            createdDateArry = [responseDict valueForKey:@"createddate"];
-            NSLog(@"createddate %@:",createdDateArry);
-            
-            createdByArr = [responseDict valueForKey:@"createdby"];
-            NSLog(@"createdby %@:",createdByArr);
-            //NSLog(@"name %@:",createdByArr);*/
-           
-            
            // [tableViewObj reloadData];
             
-           
+        }
             
-        }else
+        }else if(updateRequest==request)
+        {
         
         //Categories
         //[MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -310,7 +295,7 @@
             
            // [self sendItemsRequestWithCategoryId:categoryId];
             
-            
+        }
         } else {
             NSString *message=[NSString stringWithFormat:@"UnExpected Error..Please try again"];
             UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Alert" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -363,7 +348,9 @@
 }
 
 -(void)SubmitDetails{
-    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Usersettings.json"];
+    
+    
+    NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Updatebyuserst/1989895"];
     
     NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
     ////WEBSERVICE CALL
@@ -373,7 +360,7 @@
     //    [request startAsynchronous];
     
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:someUrl];
+   updateRequest = [ASIFormDataRequest requestWithURL:someUrl];
     //    [request setRequestMethod:@"POST"];
     //    [request setPostValue:self.useNameTxf.text forKey:@"username"];
     //    [request setPostValue:self.pwdTxt.text forKey:@"password"];
@@ -387,6 +374,18 @@
     [dic setObject: self.bluetoothStr forKey:@"bluetooth"];
     [dic setObject: self.pushStr forKey:@"push_notification"];
     [dic setObject:self.bannerStr forKey:@"banners"];
+    [dic setObject: self.bluetoothStr forKey:@"alerts_on_locked_screen"];
+    //[dic setObject: self.pushStr forKey:@"app_update_check"];
+    [dic setObject:self.bannerStr forKey:@"ssl"];
+    
+    [dic setObject: self.bluetoothStr forKey:@"gps"];
+    [dic setObject: self.pushStr forKey:@"web_server"];
+    [dic setObject:self.bannerStr forKey:@"wifi"];
+    [dic setObject: self.bluetoothStr forKey:@"sms_notifications"];
+    //[dic setObject: self.pushStr forKey:@"show_in_notificiton_center"];
+    [dic setObject:self.bannerStr forKey:@"email_alerts_for_offers"];
+    
+   
     
     
     NSError *error;
@@ -400,9 +399,9 @@
         NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
         
         
-        [request appendPostData:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
-        [request setDelegate:self];
-        [request startSynchronous];
+        [updateRequest appendPostData:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+        [updateRequest setDelegate:self];
+        [updateRequest startSynchronous];
         
         
      
