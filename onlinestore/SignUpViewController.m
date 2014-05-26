@@ -131,50 +131,41 @@ UIView *pickerBackground;
         
     } else if (request.responseStatusCode == 200) {
         
-       
- 
-        NSMutableString *theMutableString = [[NSMutableString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",theMutableString);
-        
-       [theMutableString replaceOccurrencesOfString:@"\"" withString:@"" options:NSCaseInsensitiveSearch range:(NSRange){0,[theMutableString length]}];
-        
-        NSData *myData=[theMutableString dataUsingEncoding:NSUTF8StringEncoding];
-        
         
         NSError *jsonError;
         NSDictionary *responseDict = [NSJSONSerialization
-                                      JSONObjectWithData:myData
+                                      JSONObjectWithData:request.rawResponseData
                                       options:NSJSONReadingAllowFragments
                                       error:&jsonError];
         
-        if ([theMutableString isEqualToString:@"id"]) {
-           // dic = [dic s];
+        NSString *idString=[responseDict objectForKey:@"id"];
+        
+        [dic setObject:idString forKey:@"id"];
+        
+        //if ([idString isEqualToString:@"id"]) {
             
-            [DataHandler defaultHandler].userDetails=dic;
-//            SideMenuViewController *sd = [[SideMenuViewController alloc]initWithNibName:@"SideMenuViewController"bundle:nil];
-//            [self.navigationController pushViewController:sd animated:YES];
-
+            [DataHandler defaultHandler].userDetails=dic ;
+            
             UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
             HomeViewController1 *vc = [sb instantiateViewControllerWithIdentifier:@"HomeViewController1"];
             
-           /* SideMenuViewController *sideMenuViewController=[[SideMenuViewController alloc] initWithNibName:@"SideMenuViewController" bundle:nil];
-            
-            IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:vc
-                                                                                            leftViewController:sideMenuViewController];
-            deckController.leftSize = 120;*/
+         
             [self.navigationController pushViewController:vc animated:YES];
+        //}
+        
+        
+       // }
+    
+
+       // else{
+            //UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Title" message:@"Not Saved" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            
+            //[alert show];
             
             
-            
-            
-        }else{
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Title" message:@"Not Saved" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-            
-            [alert show];
-            
-            
-        }
-    } else {
+        //}
+    }
+else {
         NSString *message=[NSString stringWithFormat:@"UnExpected Error..Please try again"];
         UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Alert" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
