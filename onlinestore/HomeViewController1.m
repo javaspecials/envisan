@@ -89,13 +89,7 @@
     [iconsLeft addObject:tempLeftDic6];
 
     
-//    NSMutableDictionary *tempLeftDic6=[[NSMutableDictionary alloc] init];
-//    [tempLeftDic5 setObject:@"6" forKey:@"id"];
-//    [tempLeftDic5 setObject:@"Wish List" forKey:@"name"];
-//    [tempLeftDic5 setObject:@"150" forKey:@"height"];
-//    [tempLeftDic5 setObject:@"#FF7419" forKey:@"color"];
-//    [tempLeftDic5 setObject:@"j.png" forKey:@"image"];
-//    [iconsLeft addObject:tempLeftDic6];
+      [iconsLeft addObject:tempLeftDic6];
     
   
     
@@ -149,16 +143,16 @@
     [tempRightDic6 setObject:@"#F8BD19" forKey:@"color"];
     [tempRightDic6 setObject:@"k.png" forKey:@"image"];
     [iconsRight addObject:tempRightDic6];
-//    NSMutableDictionary *tempRightDic6=[[NSMutableDictionary alloc] init];
-//    [tempRightDic2 setObject:@"12" forKey:@"id"];
-//    [tempRightDic2 setObject:@"" forKey:@"name"];
-//    [tempRightDic2 setObject:@"150" forKey:@"height"];
-//    [tempRightDic2 setObject:@"#86B91C" forKey:@"color"];
-//    [tempRightDic2 setObject:@"a.png" forKey:@"image"];
-//    [iconsRight addObject:tempRightDic6];
     
-    
+    NSMutableDictionary *tempRightDic7=[[NSMutableDictionary alloc] init];
+    [tempRightDic7 setObject:@"12" forKey:@"id"];
+    [tempRightDic7 setObject:@"" forKey:@"name"];
+    [tempRightDic7 setObject:@"150" forKey:@"height"];
+    [tempRightDic7 setObject:@"#F8BD19" forKey:@"color"];
+    [tempRightDic7 setObject:@"k.png" forKey:@"image"];
+    [iconsRight addObject:tempRightDic7];
 
+    
     
     for (UIView *v in [tilesScrollView subviews]) {
         [v removeFromSuperview];

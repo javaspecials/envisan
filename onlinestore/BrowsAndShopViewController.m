@@ -37,19 +37,10 @@
     
    // self.navigationController.navigationBarHidden = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    // self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    //nameArry = [[NSMutableArray alloc]init];
-    
-     //nameArry = [[NSMutableArray alloc]initWithObjects:@"pulses ",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",@"itemname full",nil];
     self.searchReasultObj = [NSMutableArray arrayWithCapacity:[decArr count]];
-    //searchBarObj=[[UISearchBar alloc]init];
-    //searchBarObj = [[UISearchBar alloc]init];
+    
     tableViewObj.tableHeaderView = searchBarObj;
-    
-    
-    
-    
     
     
     [self getDetails];
@@ -81,14 +72,7 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Loading Shop Items..";
     
-    
-    
-    
-    
-    
-    
 }
-
 
 #pragma mark -
 #pragma mark ASIFormDataRequest Delegate Methods
@@ -204,10 +188,6 @@
 
 #pragma mark TableView
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return 1;
-//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -284,61 +264,6 @@ return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    
-//    // DisplayViewController *snObj = [[DisplayViewController alloc]initWithNibName:@"DisplayViewController" bundle:nil];
-//    UIStoryboard *sbObj = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-//    BrowsDisplayViewController  *bDispObj =[sbObj instantiateViewControllerWithIdentifier:@"BrowsDisplayViewController"];
-//    [self.navigationController pushViewController:bDispObj animated:YES];
-//    //[self.navigationController pushViewController:dispObj animated:YES];
-//    
-//    bDispObj.strItemId = [iteamIdArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"ID:%@", bDispObj.strItemId);
-//    
-//    bDispObj.strSkuCodeId = [skuCodeArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"skuCode:%@", bDispObj.strSkuCodeId);
-//    
-//    bDispObj.strCp = [cpArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"cp:%@", bDispObj.strCp);
-//    
-//    //    bDispObj.strItemId = [iteamIdArr objectAtIndex:indexPath.row];
-//    //
-//    //     NSLog(@"name:%@", bDispObj.strItemId);
-//    
-//    bDispObj.strMrp = [mrpArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"mrp:%@", bDispObj.strMrp);
-//    
-//    bDispObj.strSp = [spArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"sp:%@", bDispObj.strSp);
-//    
-//    bDispObj.strCatgId = [cateIdArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"cat_ID:%@", bDispObj.strCatgId);
-//    
-//    bDispObj.strcreateDate = [createdDateArry objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"createdDate:%@", bDispObj.strcreateDate);
-//    
-//    bDispObj.strCreatedBy = [createdByArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"creeatedBy:%@", bDispObj.strCreatedBy);
-//    
-//    bDispObj.strmodifiedDate = [modifiedDateArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"modifiedDate:%@", bDispObj.strmodifiedDate);
-//    
-//    bDispObj.sstrmodifiedBy = [modifiedByArr objectAtIndex:indexPath.row];
-//    
-//    NSLog(@"modifiedBy:%@", bDispObj.sstrmodifiedBy);
-//    
-//    bDispObj.strImg=[imgArry objectAtIndex:indexPath.row];
-//    
-//    
-//    
     
     NSMutableDictionary *itemDic=[[NSMutableDictionary alloc]init];
     

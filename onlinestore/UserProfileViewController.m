@@ -95,6 +95,7 @@ UIView *pickerBackground;
          self.address2Txf.text=[userDetails objectForKey:@"address2"];
         self.countryNameTxf.text=[userDetails objectForKey:@"country"];
           self.languageTxf.text=[userDetails objectForKey:@"language"];
+          self.gender.text=[userDetails objectForKey:@"gender"];
         
         NSString *photoURL=[userDetails objectForKey:@"image"];
         NSRange rangeValue = [photoURL rangeOfString:@"http" options:NSCaseInsensitiveSearch];
@@ -151,7 +152,7 @@ UIView *pickerBackground;
     [self.countryNameTxf resignFirstResponder];
     [self.emaitAdrTxf resignFirstResponder];
     [self.zipCodeTxf resignFirstResponder];
-    //[self.activeTxf resignFirstResponder];
+    [self.gender resignFirstResponder];
     [self.languageTxf resignFirstResponder];
 //    [self.createDateTxf resignFirstResponder];
 //    [self.createdByTxf resignFirstResponder];
@@ -184,21 +185,9 @@ UIView *pickerBackground;
 
     NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
     ////WEBSERVICE CALL
-//    NSURL *url = [NSURL URLWithString:urlString];
-//    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-//    [request setDelegate:self];
-//    [request startAsynchronous];
-    
-    
+
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:someUrl];
-//    [request setRequestMethod:@"POST"];
-//    [request setPostValue:self.useNameTxf.text forKey:@"username"];
-//    [request setPostValue:self.pwdTxt.text forKey:@"password"];
-//    [request setPostValue:self.fNameTxt.text forKey:@"firstname"];
-//    [request setPostValue:self.lNameTxt.text forKey:@"id"];
-//
-    
-    
+
     NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
     /*[dic setObject:@"1575095" forKey:@"id"];
     [dic setObject:@"dkaran" forKey:@"username"];
@@ -223,9 +212,8 @@ UIView *pickerBackground;
     
     [dic setObject:self.emaitAdrTxf.text forKey:@"emailaddress"];
     [dic setObject:self.zipCodeTxf.text forKey:@"zipcode"];
-    //[dic setObject:self.activeTxf.text forKey:@"activie"];
-    //[dic setObject:self.countryNameTxf.text forKey:@"country"];
     [dic setObject:self.languageTxf.text forKey:@"language"];
+    [dic setObject:self.gender.text forKey:@"gender"];
     
 
     

@@ -43,6 +43,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *cityNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *stateNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *countryNameTxf;
+@property (weak, nonatomic) IBOutlet UITextField *gender;
 @property (weak, nonatomic) IBOutlet UITextField *emaitAdrTxf;
 @property (weak, nonatomic) IBOutlet UITextField *zipCodeTxf;
 @property (weak, nonatomic) IBOutlet UITextField *languageTxf;

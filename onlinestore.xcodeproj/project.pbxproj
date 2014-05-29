@@ -25,7 +25,6 @@
 		2F1844A819175A1800EAC46F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1844A619175A1800EAC46F /* SignUpViewController.m */; };
 		2F1844A919175A1800EAC46F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1844A719175A1800EAC46F /* SignUpViewController.xib */; };
 		2F2230C318DF31C30041D10E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2230C218DF31C30041D10E /* FacebookSDK.framework */; };
-		2F23520D18FCF36F0036DE79 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F23520C18FCF36F0036DE79 /* RegisterViewController.m */; };
 		2F27072A19141E5900D80DEE /* ShopDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F27072919141E5900D80DEE /* ShopDisplayViewController.m */; };
 		2F27072D19141E8500D80DEE /* PlanToByeDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F27072C19141E8500D80DEE /* PlanToByeDisplayViewController.m */; };
 		2F27073019141EB300D80DEE /* GroceriesDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F27072F19141EB300D80DEE /* GroceriesDisplayViewController.m */; };
@@ -140,8 +139,6 @@
 		2FB578EB18D9EE8B005CA82A /* intro3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB578E618D9EE8B005CA82A /* intro3.png */; };
 		2FB578EC18D9EE8B005CA82A /* intro4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB578E718D9EE8B005CA82A /* intro4.png */; };
 		2FB578ED18D9EE8B005CA82A /* intro5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB578E818D9EE8B005CA82A /* intro5.png */; };
-		2FB8D2F41917856F003200B3 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8D2F21917856F003200B3 /* DemoViewController.m */; };
-		2FB8D2F51917856F003200B3 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB8D2F31917856F003200B3 /* DemoViewController.xib */; };
 		2FB9C3FD1908EAEF00975CBC /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9C3FC1908EAEF00975CBC /* ShopViewController.m */; };
 		2FBAE7CD190A235E0097B187 /* LandingShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBAE7CC190A235E0097B187 /* LandingShopListViewController.m */; };
 		2FBAE7D0190A237E0097B187 /* LandingPlanToBuyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBAE7CF190A237E0097B187 /* LandingPlanToBuyListViewController.m */; };
@@ -277,8 +274,6 @@
 		2F1844A619175A1800EAC46F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		2F1844A719175A1800EAC46F /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		2F2230C218DF31C30041D10E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		2F23520B18FCF36F0036DE79 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		2F23520C18FCF36F0036DE79 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		2F27072819141E5900D80DEE /* ShopDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDisplayViewController.h; sourceTree = "<group>"; };
 		2F27072919141E5900D80DEE /* ShopDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDisplayViewController.m; sourceTree = "<group>"; };
 		2F27072B19141E8500D80DEE /* PlanToByeDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanToByeDisplayViewController.h; sourceTree = "<group>"; };
@@ -444,9 +439,6 @@
 		2FB578E618D9EE8B005CA82A /* intro3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro3.png; sourceTree = "<group>"; };
 		2FB578E718D9EE8B005CA82A /* intro4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro4.png; sourceTree = "<group>"; };
 		2FB578E818D9EE8B005CA82A /* intro5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro5.png; sourceTree = "<group>"; };
-		2FB8D2F11917856F003200B3 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
-		2FB8D2F21917856F003200B3 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		2FB8D2F31917856F003200B3 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
 		2FB9C3FB1908EAEF00975CBC /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
 		2FB9C3FC1908EAEF00975CBC /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
 		2FBAE7CB190A235E0097B187 /* LandingShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingShopListViewController.h; sourceTree = "<group>"; };
@@ -1065,8 +1057,6 @@
 				2F0C1E6818ED3FCB00975399 /* UsereProDisplayViewController.m */,
 				2F0C1E6E18ED46B800975399 /* UserFeedBackViewController.h */,
 				2F0C1E6F18ED46B800975399 /* UserFeedBackViewController.m */,
-				2F23520B18FCF36F0036DE79 /* RegisterViewController.h */,
-				2F23520C18FCF36F0036DE79 /* RegisterViewController.m */,
 				2FBAE7CB190A235E0097B187 /* LandingShopListViewController.h */,
 				2FBAE7CC190A235E0097B187 /* LandingShopListViewController.m */,
 				2FC7A82A19065FEE0049E0E9 /* LandingWishListViewController.h */,
@@ -1096,9 +1086,6 @@
 				2F1844A519175A1800EAC46F /* SignUpViewController.h */,
 				2F1844A619175A1800EAC46F /* SignUpViewController.m */,
 				2F1844A719175A1800EAC46F /* SignUpViewController.xib */,
-				2FB8D2F11917856F003200B3 /* DemoViewController.h */,
-				2FB8D2F21917856F003200B3 /* DemoViewController.m */,
-				2FB8D2F31917856F003200B3 /* DemoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1340,7 +1327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB8D2F51917856F003200B3 /* DemoViewController.xib in Resources */,
 				2FC4528918F85B1C00E9FE33 /* c.png in Resources */,
 				2FC4528818F85B1C00E9FE33 /* b.png in Resources */,
 				2F0C1E6D18ED404B00975399 /* camera.png in Resources */,
@@ -1537,7 +1523,6 @@
 				2F4C547E1912A7FA008DDC2A /* IIWrapController.m in Sources */,
 				2FFE430018FD713A00D88F76 /* CouponsViewController.m in Sources */,
 				3CB04C1718B35AB600C10CC8 /* ASIDownloadCache.m in Sources */,
-				2FB8D2F41917856F003200B3 /* DemoViewController.m in Sources */,
 				2FA4DC9D18DC80C00092CCAC /* EGOImageButton.m in Sources */,
 				2FFAC5AB18FED98900E43A68 /* OffersAndDealsViewController.m in Sources */,
 				2FAAA20718EC516800B0CF8C /* BrowsAndShopViewController.m in Sources */,
@@ -1562,7 +1547,6 @@
 				2F5287DE19209C5D0094727D /* BrowseCell.m in Sources */,
 				3CB04C3618B35AC300C10CC8 /* SBJsonParser.m in Sources */,
 				2FA14EF518E1C18000B77CF6 /* JSONSyntaxHighlight.m in Sources */,
-				2F23520D18FCF36F0036DE79 /* RegisterViewController.m in Sources */,
 				2F4C54821912A899008DDC2A /* SideMenuViewController.m in Sources */,
 				2FA8A95718FFE288008ACD4B /* TableCell.m in Sources */,
 				3CB04BFC18B35A8300C10CC8 /* MBProgressHUD.m in Sources */,

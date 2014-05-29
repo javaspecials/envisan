@@ -1,4 +1,4 @@
-//
+            //
 //  UserrSettingsViewController.m
 //  onlinestore
 //
@@ -40,23 +40,7 @@ NSURL *url ;
     [myScrool setContentSize:CGSizeMake(320, 1100)];
     
     
-
-    
-    
-    
-    
-    
     [self getDetails];
-    
-    
-   /* NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://68.169.52.119/Skumastrbycatg/%i",userid]];
-    itemsRequest = [ASIHTTPRequest requestWithURL:url];
-    
-    
-    [itemsRequest setDelegate:self];
-    [itemsRequest startAsynchronous];
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Loading Shop Items..";*/
 }
 
 
@@ -70,8 +54,7 @@ NSURL *url ;
     ////WEBSERVICE CALL
     
     NSURL *apiUrl = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    // NSURL *urlObj = [NSURL URLWithString:urlString];
-    //NSURL *url = [NSURL URLWithString:urlString];
+    
     getRequest = [ASIFormDataRequest requestWithURL:apiUrl];
     [getRequest setDelegate:self];
     [getRequest startAsynchronous];
@@ -114,12 +97,11 @@ NSURL *url ;
         {
             NSLog(@"responseDict is %@",responseDict );
             
-            // NSArray *productArrObj =[responseDict objectForKey:@"products"];
+            // NSArray *productArrObj =[responseDict
           NSLog(@"name %@:",responseDict);
             
          
-            
-           // [self displaySwitchMethods];
+    
             
            
             
@@ -250,23 +232,19 @@ NSURL *url ;
 
 
 
-           // [tableViewObj reloadData];
+         
             
         }
             
         }else if(updateRequest==request)
         {
         
-        //Categories
-        //[MBProgressHUD hideHUDForView:self.view animated:YES];
         if (request.responseStatusCode == 400) {
             
         } else if (request.responseStatusCode == 403) {
             
         } else if (request.responseStatusCode == 200) {
             
-            
-           // [self SubmitDetails:request.responseData];
             
             
             NSString *str = [[NSString alloc] initWithData:request.responseData encoding:NSUTF8StringEncoding];
@@ -284,16 +262,6 @@ NSURL *url ;
                         
                         
                     }
-
-           // [self prepareDataFromJSONData:request.responseData];
-            // [self prepareDataFromJSONDataForitemList:request.responseData];
-            
-            
-            
-          //  NSDictionary *categoryDic=[categories objectAtIndex:selectedCategoryIndex];
-           // int categoryId=[[categoryDic objectForKey:@"id"] intValue];
-            
-           // [self sendItemsRequestWithCategoryId:categoryId];
             
         }
         } else {
@@ -312,12 +280,6 @@ NSURL *url ;
             [alert show];
             
         }
-        
-//    } else {
-//        NSString *message=[NSString stringWithFormat:@"UnExpected Error..Please try again"];
-//        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Alert" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//        [alert show];
-//    }
     
 }
 
@@ -353,21 +315,8 @@ NSURL *url ;
     NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Updatebyuserst/1989895"];
     
     NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
-    ////WEBSERVICE CALL
-    //    NSURL *url = [NSURL URLWithString:urlString];
-    //    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    //    [request setDelegate:self];
-    //    [request startAsynchronous];
-    
     
    updateRequest = [ASIFormDataRequest requestWithURL:someUrl];
-    //    [request setRequestMethod:@"POST"];
-    //    [request setPostValue:self.useNameTxf.text forKey:@"username"];
-    //    [request setPostValue:self.pwdTxt.text forKey:@"password"];
-    //    [request setPostValue:self.fNameTxt.text forKey:@"firstname"];
-    //    [request setPostValue:self.lNameTxt.text forKey:@"id"];
-    //
-    
     
     NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
     //[dic setObject:@"1235" forKey:@"id"];
@@ -405,12 +354,6 @@ NSURL *url ;
         
         
      
-        
-        
-        //[request setDelegate:self];
-        //[request startAsynchronous];
-        //[request startAsyncrhonous];
-        
     }
     
     

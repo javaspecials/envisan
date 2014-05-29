@@ -14,8 +14,6 @@
 {
     IBOutlet UITableView *tableViewObj;
 }
-//- (IBAction)searchTapp:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextField *nameTxt;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBarObj;
 @property(strong,nonatomic)NSMutableArray *searchReasultObj,*arrTitle,*imgArry,*iteamIdArr,*bleIdArr,*nameArry,*shortDecArray,*iteamPromoMsgArr,*cpArr,*mrpArr,*spArr,*itemUrlArr,*codeIdArr,*promoMsgArr,*createdDateArry,*createdByArr,*modifiedDateArr,*modifiedByArr,*decArr,*cateIdArr,*skuCodeArr;
 

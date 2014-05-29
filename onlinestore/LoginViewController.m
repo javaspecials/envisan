@@ -19,7 +19,7 @@
 #import "SideMenuViewController.h"
 #import "IIViewDeckController.h"
 #import "SignUpViewController.h"
-#import "DemoViewController.h"
+
 
 
 
@@ -397,14 +397,7 @@ GPPSignIn *signIn;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-//    [self.fNameTxf resignFirstResponder];
-//    [self.lNameTxf resignFirstResponder];
-//    [self.cityNameTxf resignFirstResponder];
-//    [self.stateNameTxf resignFirstResponder];
-//    [self.emailAddrTxf resignFirstResponder];
-//    [self.countryNameTxf resignFirstResponder];
-//    [self.addressTxtView resignFirstResponder];
-//    [self.dobTxf resignFirstResponder];
+
     [self.username resignFirstResponder];
     [self.password resignFirstResponder];
     [self animateScrollViewtoXandY:0 :0];
@@ -429,16 +422,7 @@ GPPSignIn *signIn;
 
 #pragma mark -TableView Delegate methods
 
-//-(BOOL)textFieldShouldReturn:(UITextField *)textField {
-//    if (textField == self.username) {
-//        [self.username becomeFirstResponder];
-//    }
-//    else if (textField == self.password) {
-//        [self.password becomeFirstResponder];
-//    }
-//    return YES;
-//    
-//}
+
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {

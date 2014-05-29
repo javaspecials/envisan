@@ -6,17 +6,16 @@
 //  Copyright (c) 2014 Rajasekhar. All rights reserved.
 //
 
-//#import "SignUpViewController1.h"
+
 #import "ASIFormDataRequest.h"
 #import "MBProgressHUD.h"
 #import "DataHandler.h"
 #import "HomeViewController1.h"
-//#import "SideMenuViewController.h"
 
 #import "SideMenuViewController.h"
 #import "IIViewDeckController.h"
 #import "SignUpViewController.h"
-#import "DemoViewController.h"
+
 @interface SignUpViewController ()
 
 @end
@@ -60,30 +59,10 @@ UIView *pickerBackground;
     NSString *urlString=[NSString stringWithFormat:@"http://68.169.52.119/Userdetail.json"];
     
     NSURL *someUrl = [[NSURL alloc]initWithString:urlString];
-    ////WEBSERVICE CALL
-    //    NSURL *url = [NSURL URLWithString:urlString];
-    //    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    //    [request setDelegate:self];
-    //    [request startAsynchronous];
-    
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:someUrl];
-    //    [request setRequestMethod:@"POST"];
-    //    [request setPostValue:self.useNameTxf.text forKey:@"username"];
-    //    [request setPostValue:self.pwdTxt.text forKey:@"password"];
-    //    [request setPostValue:self.fNameTxt.text forKey:@"firstname"];
-    //    [request setPostValue:self.lNameTxt.text forKey:@"id"];
-    //
-    
     
     dic=[[NSMutableDictionary alloc] init];
-    /*[dic setObject:@"1575095" forKey:@"id"];
-     [dic setObject:@"dkaran" forKey:@"username"];
-     [dic setObject:@"d4297" forKey:@"password"];
-     [dic setObject:@"bpau" forKey:@"firstname"];*/
-    
-    
-    //[dic setObject:@"" forKey:@"id"];
     
     [dic setObject:self.nameTxf.text forKey:@"username"];
     [dic setObject:self.mfTxf.text forKey:@"gender"];
@@ -121,8 +100,6 @@ UIView *pickerBackground;
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     
-    
-    
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     
     if (request.responseStatusCode == 400) {
@@ -131,6 +108,7 @@ UIView *pickerBackground;
         
     } else if (request.responseStatusCode == 200) {
         
+     
         
         NSError *jsonError;
         NSDictionary *responseDict = [NSJSONSerialization
@@ -141,37 +119,40 @@ UIView *pickerBackground;
         NSString *idString=[responseDict objectForKey:@"id"];
         
         [dic setObject:idString forKey:@"id"];
-        
-        //if ([idString isEqualToString:@"id"]) {
+        if ([idString isEqualToString:[responseDict objectForKey:@"id"]]) {
             
             [DataHandler defaultHandler].userDetails=dic ;
             
             UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
             HomeViewController1 *vc = [sb instantiateViewControllerWithIdentifier:@"HomeViewController1"];
             
-         
-            [self.navigationController pushViewController:vc animated:YES];
-        //}
-        
-        
-       // }
-    
-
-       // else{
-            //UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Title" message:@"Not Saved" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            SideMenuViewController *sideMenuViewController=[[SideMenuViewController alloc] initWithNibName:@"SideMenuViewController" bundle:nil];
             
-            //[alert show];
+            IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:vc
+                                                                                            leftViewController:sideMenuViewController];
+            deckController.leftSize = 120;
+            //deckController.leftSize=1024-275;
+            [self.navigationController pushViewController:deckController animated:YES];
+            
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"" message:@"Saved Successfully" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            
+            [alert show];
+            
+        }else{
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"" message:@"Not Saved" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            
+            [alert show];
             
             
-        //}
-    }
-else {
+        }
+    } else {
         NSString *message=[NSString stringWithFormat:@"UnExpected Error..Please try again"];
         UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Alert" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
     
 }
+
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
@@ -260,12 +241,6 @@ else {
     [self.zipTxf resignFirstResponder];
     [self.dobTxf resignFirstResponder];
     [self.mfTxf resignFirstResponder];
-    //    [self.countryNameTxf resignFirstResponder];
-    //    [self.addressTxtView resignFirstResponder];
-    //    [self.dobTxf resignFirstResponder];
-    //    [self.userNameTxf resignFirstResponder];
-    //    [self.passwordTxf resignFirstResponder];
-    
     
     return YES;
 }
@@ -313,22 +288,6 @@ else {
     pickerBackground.hidden=YES;
     
     NSLog(@"Cancel pressed");
-}
-
-- (IBAction)segment:(id)sender {
-    if (Segment.selectedSegmentIndex == 0) {
-        self.mfTxf.text = @"Male";
-         //[dic setObject:self.mfTxf.text forKey:@"gender"];
-        //[Segment setTitle:@"Male" forSegmentAtIndex:0];
-        
-    }
-    else if (Segment.selectedSegmentIndex == 1)
-    {
-        self.mfTxf.text = @"Female";
-        //[Segment setTitle:@"Female" forSegmentAtIndex:1];
-
-         //[dic setObject:self.mfTxf.text forKey:@"gender"];
-    }
 }
 
 #pragma DropDo Button
